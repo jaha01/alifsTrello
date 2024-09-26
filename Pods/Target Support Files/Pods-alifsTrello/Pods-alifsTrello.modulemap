@@ -1,0 +1,6 @@
+framework module Pods_alifsTrello {
+  umbrella header "Pods-alifsTrello-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,6 +13,12 @@
 		449D5E462CA4E0A4004D97BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449D5E442CA4E0A4004D97BA /* Main.storyboard */; };
 		449D5E482CA4E0AA004D97BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449D5E472CA4E0AA004D97BA /* Assets.xcassets */; };
 		449D5E4B2CA4E0AA004D97BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449D5E492CA4E0AA004D97BA /* LaunchScreen.storyboard */; };
+		449D5E532CA57642004D97BA /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D5E522CA57642004D97BA /* DI.swift */; };
+		449D5E552CA57694004D97BA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D5E542CA57694004D97BA /* AuthService.swift */; };
+		449D5E582CA57BF1004D97BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 449D5E572CA57BF1004D97BA /* GoogleService-Info.plist */; };
+		449D5E5A2CA57F89004D97BA /* RegisterUserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D5E592CA57F89004D97BA /* RegisterUserCredentials.swift */; };
+		449D5E5C2CA57F9E004D97BA /* LoginUserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D5E5B2CA57F9E004D97BA /* LoginUserCredentials.swift */; };
+		F08C10C896EFF650BDAECE3E /* Pods_alifsTrello.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F0319C546A1E35D55421F4 /* Pods_alifsTrello.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,14 @@
 		449D5E472CA4E0AA004D97BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		449D5E4A2CA4E0AA004D97BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		449D5E4C2CA4E0AA004D97BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449D5E522CA57642004D97BA /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		449D5E542CA57694004D97BA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		449D5E572CA57BF1004D97BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		449D5E592CA57F89004D97BA /* RegisterUserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserCredentials.swift; sourceTree = "<group>"; };
+		449D5E5B2CA57F9E004D97BA /* LoginUserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserCredentials.swift; sourceTree = "<group>"; };
+		96F0319C546A1E35D55421F4 /* Pods_alifsTrello.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alifsTrello.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C198C470ED33FEF7C8E84859 /* Pods-alifsTrello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alifsTrello.release.xcconfig"; path = "Target Support Files/Pods-alifsTrello/Pods-alifsTrello.release.xcconfig"; sourceTree = "<group>"; };
+		F9E5F865450E57EB803E40ED /* Pods-alifsTrello.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alifsTrello.debug.xcconfig"; path = "Target Support Files/Pods-alifsTrello/Pods-alifsTrello.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08C10C896EFF650BDAECE3E /* Pods_alifsTrello.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				449D5E3D2CA4E0A4004D97BA /* alifsTrello */,
 				449D5E3C2CA4E0A4004D97BA /* Products */,
+				8C9BBD330D7F5989CD0BCA0A /* Pods */,
+				BFFCFB5A3CD2A011D26ADB8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +75,51 @@
 			children = (
 				449D5E3E2CA4E0A4004D97BA /* AppDelegate.swift */,
 				449D5E402CA4E0A4004D97BA /* SceneDelegate.swift */,
+				449D5E522CA57642004D97BA /* DI.swift */,
+				449D5E562CA576B6004D97BA /* Services */,
+				449D5E5D2CA57FA5004D97BA /* Credentials */,
 				449D5E422CA4E0A4004D97BA /* ViewController.swift */,
 				449D5E442CA4E0A4004D97BA /* Main.storyboard */,
 				449D5E472CA4E0AA004D97BA /* Assets.xcassets */,
 				449D5E492CA4E0AA004D97BA /* LaunchScreen.storyboard */,
 				449D5E4C2CA4E0AA004D97BA /* Info.plist */,
+				449D5E572CA57BF1004D97BA /* GoogleService-Info.plist */,
 			);
 			path = alifsTrello;
+			sourceTree = "<group>";
+		};
+		449D5E562CA576B6004D97BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				449D5E542CA57694004D97BA /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		449D5E5D2CA57FA5004D97BA /* Credentials */ = {
+			isa = PBXGroup;
+			children = (
+				449D5E592CA57F89004D97BA /* RegisterUserCredentials.swift */,
+				449D5E5B2CA57F9E004D97BA /* LoginUserCredentials.swift */,
+			);
+			path = Credentials;
+			sourceTree = "<group>";
+		};
+		8C9BBD330D7F5989CD0BCA0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9E5F865450E57EB803E40ED /* Pods-alifsTrello.debug.xcconfig */,
+				C198C470ED33FEF7C8E84859 /* Pods-alifsTrello.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFFCFB5A3CD2A011D26ADB8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96F0319C546A1E35D55421F4 /* Pods_alifsTrello.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 449D5E4F2CA4E0AB004D97BA /* Build configuration list for PBXNativeTarget "alifsTrello" */;
 			buildPhases = (
+				E67D9067074315D8BCE10A1F /* [CP] Check Pods Manifest.lock */,
 				449D5E372CA4E0A4004D97BA /* Sources */,
 				449D5E382CA4E0A4004D97BA /* Frameworks */,
 				449D5E392CA4E0A4004D97BA /* Resources */,
+				816D5E15602ACAE33339D784 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,19 +184,66 @@
 			files = (
 				449D5E4B2CA4E0AA004D97BA /* LaunchScreen.storyboard in Resources */,
 				449D5E482CA4E0AA004D97BA /* Assets.xcassets in Resources */,
+				449D5E582CA57BF1004D97BA /* GoogleService-Info.plist in Resources */,
 				449D5E462CA4E0A4004D97BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		816D5E15602ACAE33339D784 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alifsTrello/Pods-alifsTrello-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alifsTrello/Pods-alifsTrello-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alifsTrello/Pods-alifsTrello-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E67D9067074315D8BCE10A1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alifsTrello-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		449D5E372CA4E0A4004D97BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449D5E532CA57642004D97BA /* DI.swift in Sources */,
 				449D5E432CA4E0A4004D97BA /* ViewController.swift in Sources */,
+				449D5E5C2CA57F9E004D97BA /* LoginUserCredentials.swift in Sources */,
+				449D5E552CA57694004D97BA /* AuthService.swift in Sources */,
 				449D5E3F2CA4E0A4004D97BA /* AppDelegate.swift in Sources */,
+				449D5E5A2CA57F89004D97BA /* RegisterUserCredentials.swift in Sources */,
 				449D5E412CA4E0A4004D97BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +388,7 @@
 		};
 		449D5E502CA4E0AB004D97BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E5F865450E57EB803E40ED /* Pods-alifsTrello.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +416,7 @@
 		};
 		449D5E512CA4E0AB004D97BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C198C470ED33FEF7C8E84859 /* Pods-alifsTrello.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
