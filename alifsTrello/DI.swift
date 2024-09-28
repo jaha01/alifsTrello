@@ -15,4 +15,11 @@ final class DI {
         return AuthService()
     }()
     
+    func createSetupService() -> SetupService {
+        return SetupService(authService: authService)
+    }
+    
+    func dbService() -> DBService {
+        return DBService(authService: authService)
+    }
 }

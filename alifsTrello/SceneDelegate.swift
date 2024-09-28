@@ -17,7 +17,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowsScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowsScene)
-        window.rootViewController = ViewController()
+        
+        let setupService = DI.shared.createSetupService()
+        
+        switch setupService.getEntryScreen() {
+
+        case .auth:
+            let builder = LoginBuilder()
+            window.rootViewController = builder.build()
+        case .mainTabBar:
+            let view = MainBuilder()
+            window.rootViewController = view.build()
+        }
         
         self.window = window
         self.window?.makeKeyAndVisible()
